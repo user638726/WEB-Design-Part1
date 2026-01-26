@@ -1,0 +1,586 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.wrap {
+  margin: 0 auto;
+  width: 1920px;
+}
+
+.bar {
+  height: 32px;
+  background-color: #f6f6f8;
+}
+.bar ul {
+  display: flex;
+  justify-content: space-around;
+}
+.bar li a {
+  text-decoration: none;
+}
+
+.facebook {
+  margin-left: 1320px;
+}
+.twitter a img {
+  margin-left: 12px;
+}
+.text1 {
+  width: 48px;
+  font-family: Microsoft JhengHei UI;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-right: 12px;
+  margin-left: 5px;
+  color: #4267b2;
+}
+.text1:hover,
+.text2:hover {
+  color: #00cc99;
+}
+.text2 {
+  width: 64px;
+  font-family: Microsoft JhengHei UI;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-left: 5px;
+  color: #1da1f2;
+}
+.facebook {
+  border-right: 2px solid #cccccc;
+}
+.twitter {
+  padding-right: 410px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+.logo h1 a {
+  background-image: url("../images/logo-hexschool.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* 或 cover */
+  width: 150.06px;
+  height: 36px;
+  display: block;
+  margin-left: 404px;
+  margin-top: 18px;
+
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.logo ul {
+  display: flex;
+  justify-content: space-between;
+}
+.text3 {
+  text-decoration: none;
+  color: #00251a;
+  display: block;
+  font-family: Microsoft JhengHei UI;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-right: 42px;
+  margin-top: 34px;
+  width: 32px;
+}
+.text4 {
+  text-decoration: none;
+  font-family: Microsoft JhengHei UI;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #00251a;
+  display: block;
+  margin-right: 42px;
+  margin-top: 34px;
+  width: 64px;
+}
+.text5 {
+  text-decoration: none;
+  color: #00251a;
+  font-family: Microsoft JhengHei UI;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  display: block;
+  margin-right: 425px;
+  margin-top: 34px;
+  width: 64px;
+}
+.logo ul li a:hover {
+  border-bottom: 4px solid #00cc99;
+  padding-bottom: 18px;
+}
+.banner {
+  background-image: url("../images/header_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1920px;
+  height: 390px;
+  position: relative;
+}
+.banner img {
+  margin-top: 125.5px;
+}
+.banner-title {
+  font-family: Microsoft JhengHei UI;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 36px;
+  leading-trim: none;
+  line-height: 120%;
+  letter-spacing: 0%;
+  top: 150px;
+  left: 498px;
+  position: absolute;
+  color: #1e1e1e;
+}
+.banner-subtitle {
+  font-family: Microsoft JhengHei UI;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 36px;
+  leading-trim: none;
+  line-height: 120%;
+  letter-spacing: 0%;
+  top: 190px;
+  left: 498px;
+  position: absolute;
+  color: #1e1e1e;
+}
+.course {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+.course-item {
+  width: 350px;
+  angle: 0 deg;
+  opacity: 1;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px 0px #00000029;
+}
+.course-item h2 {
+  text-align: center;
+  font-family: Microsoft JhengHei UI;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin-bottom: 12px;
+  color: #000000;
+}
+.course-item p {
+  font-family: Microsoft JhengHei UI;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  display: block;
+  width: 310px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+.course-item:last-child p {
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 0;
+  width: 310px;
+}
+.course-item img {
+  display: block;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+.center-list-wrapper {
+  text-align: left;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  width: 310px;
+}
+.center-list {
+  display: block;
+  text-align: left;
+  padding-left: 20px;
+  margin: 0;
+}
+.center-list li {
+  display: list-item;
+  list-style: disc;
+  font-family: Microsoft JhengHei UI;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #000000;
+  margin-bottom: 8px;
+  margin-left: 30px;
+}
+.center-list li:last-child {
+  margin-bottom: 0;
+}
+#jquery-title {
+  margin-top: 90px;
+}
+.text6 {
+  text-align: center;
+  font-family: Microsoft JhengHei UI;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.compare-table {
+  width: 920px; /* 依 Figma */
+  margin: 0 auto; /* ⭐⭐⭐ 表格置中 */
+  font-family: Microsoft JhengHei UI;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #000000;
+  margin-bottom: 60px;
+}
+.compare-table th,
+.compare-table td {
+  padding: 12px 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  border-bottom: 1px solid #cccccc;
+}
+
+.compare-table th {
+  font-weight: 700;
+  text-align: left;
+}
+
+.compare-table td {
+  text-align: left;
+}
+.green {
+  color: #00cc99;
+  font-weight: 700;
+}
+.form-background {
+  background-image: url("../images/Rectangle 8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1920px;
+  height: 455px;
+  padding-top: 48px;
+}
+.form-background form {
+  width: 920px; /* 跟表格同寬，看起來最像設計稿 */
+  margin: 0 auto; /* 整個表單置中 */
+  display: flex;
+  gap: 30px; /* 左右欄間距 */
+  justify-content: center;
+  align-items: flex-start;
+}
+.form-background h2 {
+  font-family: Microsoft JhengHei UI;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #00251a;
+}
+.form-background p {
+  font-family: Microsoft JhengHei UI;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #00251a;
+}
+
+.form-background input {
+  width: 351px;
+  height: 38px;
+  angle: 0 deg;
+  opacity: 1;
+  border-width: 1px;
+  border-radius: 3px;
+  border: 1px solid #aaaaaa;
+  margin-bottom: 8px;
+}
+.form-text1 h2:first-child {
+  margin-bottom: 8px; /* 兩行之間的距離 */
+}
+.form-text1 {
+  margin-bottom: 28px;
+}
+.text-area {
+  width: 350px;
+  height: 200px;
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+  margin-top: 8px;
+  resize: none;
+  display: block;
+}
+
+.form-group1 {
+  width: 350px;
+}
+.form-group1 p {
+  margin-bottom: 8px;
+}
+
+.form-group1 p:first-child {
+  margin-top: 0;
+}
+.form-group2 {
+  width: 350px;
+}
+.form-background form {
+  width: 920px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* 讓 button 獨佔一行並置中 */
+.btn {
+  flex: 0 0 20%; /* ⭐ 關鍵：佔滿整列 -> 自動到下一行 */
+  display: flex; /* 讓文字可水平垂直置中 */
+  justify-content: center;
+  align-items: center;
+
+  width: 159px;
+  height: 38px;
+  margin: 0 auto; /* ⭐ 置中 */
+  border-radius: 3px;
+  background: #00251a;
+  border: 1px solid #00251a;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Microsoft JhengHei UI;
+  font-style: Regular;
+  leading-trim: NONE;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.footer{
+  width:1920px;
+  height:44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer h1 a{
+  background-image: url("../images/logo-hexschool.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* 或 cover */
+  width: 150.06px;
+  height: 36px;
+  display: block;
+  margin-left: 404px;
+  margin-top: 18px;
+
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.text7{
+font-family: Microsoft JhengHei UI;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 150%;
+letter-spacing: 0%;
+color: #000000;
+text-decoration: none;
+}
+.text8{
+  font-family: Microsoft JhengHei UI;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 150%;
+letter-spacing: 0%;
+color: #000000;
+text-decoration: none;
+}
+.footer-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right:404px;
+  margin-top:30px;
+}
