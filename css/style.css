@@ -253,9 +253,52 @@ table {
   margin-top: 34px;
   width: 64px;
 }
-.logo ul li a:hover {
+/* 頂層 hover */
+.text3:hover {
   border-bottom: 4px solid #00cc99;
   padding-bottom: 18px;
+}
+
+/* active 狀態（頂層、子選單都可共用） */
+.logo a.active {
+  background: blue;
+  color: white;
+}
+
+/* 下拉容器：預設隱藏 */
+.dropdown-menu,
+.dropdown2-menu {
+  display: none;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+/* 子選單連結：一定要顯示（不要再 display:none） */
+.dropdown-menu li a,
+.dropdown2-menu li a {
+  display: block;
+  text-decoration: none;
+  font-family: Microsoft JhengHei UI;
+  color: #00251a;
+  width:64px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+.text9:hover,
+.text10:hover {
+  border-bottom: 4px solid #00cc99;
+  padding-bottom: 18px;
+}
+.swiper {
+  width: 1920px;
+  height: 390px;
 }
 .banner {
   background-image: url("../images/header_background.png");
@@ -432,14 +475,6 @@ table {
   height: 455px;
   padding-top: 48px;
 }
-.form-background form {
-  width: 920px; /* 跟表格同寬，看起來最像設計稿 */
-  margin: 0 auto; /* 整個表單置中 */
-  display: flex;
-  gap: 30px; /* 左右欄間距 */
-  justify-content: center;
-  align-items: flex-start;
-}
 .form-background h2 {
   font-family: Microsoft JhengHei UI;
   font-weight: 700;
@@ -566,6 +601,9 @@ letter-spacing: 0%;
 color: #000000;
 text-decoration: none;
 }
+.text7 a,.text8 a{
+  text-decoration: none;
+}
 .text8{
   font-family: Microsoft JhengHei UI;
 font-weight: 400;
@@ -583,4 +621,9 @@ text-decoration: none;
   justify-content: flex-end;
   margin-right:404px;
   margin-top:30px;
+}
+.top{
+  position:fixed;
+  bottom:0;
+  right:0;
 }
