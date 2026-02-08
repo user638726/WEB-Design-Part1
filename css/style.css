@@ -127,9 +127,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .wrap {
+  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  width: 1920px;
 }
 
 .bar {
@@ -141,14 +147,34 @@ table {
   justify-content: space-around;
 }
 .bar li a {
+
   text-decoration: none;
 }
-
-.facebook {
-  margin-left: 1320px;
+.bar a:focus {
+  outline: none;
 }
+
+.bar a:focus-visible {
+  outline: none;
+}
+
+.bar ul{
+  display:flex;
+  justify-content:flex-end;
+  gap: 12px;
+  padding-right: 16px;
+}
+.facebook{
+  margin-left: 0;
+  border-right: 2px solid #cccccc;
+  padding-right: 12px;
+}
+.twitter{
+  padding-right: 0;
+}
+
 .twitter a img {
-  margin-left: 12px;
+  margin-left: 3px;
 }
 .text1 {
   width: 48px;
@@ -179,12 +205,6 @@ table {
   margin-left: 5px;
   color: #1da1f2;
 }
-.facebook {
-  border-right: 2px solid #cccccc;
-}
-.twitter {
-  padding-right: 410px;
-}
 
 .logo {
   display: flex;
@@ -197,10 +217,11 @@ table {
   width: 150.06px;
   height: 36px;
   display: block;
-  margin-left: 404px;
+  margin-left: 200px;
   margin-top: 18px;
-
-  text-indent: 101%;
+  text-indent: 0; 
+  font-size: 0;        /* 避免文字影響寬度 */
+  color: transparent;  /* 保險 */
   white-space: nowrap;
   overflow: hidden;
 }
@@ -219,6 +240,7 @@ table {
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
+  margin-left:650px;
   margin-right: 42px;
   margin-top: 34px;
   width: 32px;
@@ -297,19 +319,25 @@ table {
   padding-bottom: 18px;
 }
 .swiper {
-  width: 1920px;
-  height: 390px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.swiper-slide {
+  width: 100% !important;
 }
 .banner {
   background-image: url("../images/header_background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1920px;
+  max-width: 1280px;
   height: 390px;
   position: relative;
 }
 .banner img {
-  margin-top: 125.5px;
+   width:100%; 
+   height:auto; 
+   display:block; 
 }
 .banner-title {
   font-family: Microsoft JhengHei UI;
@@ -471,8 +499,10 @@ table {
   background-image: url("../images/Rectangle 8.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1920px;
+  width: 100%;
+  max-width: 1280px; /* 可留可不留 */
   height: 455px;
+  background-size: cover;
   padding-top: 48px;
 }
 .form-background h2 {
@@ -570,8 +600,9 @@ table {
   text-align: center;
 }
 .footer{
-  width:1920px;
-  height:44px;
+  width: 100%;
+  max-width: 1280px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -583,10 +614,11 @@ table {
   width: 150.06px;
   height: 36px;
   display: block;
-  margin-left: 404px;
+  margin-left: 200px;
   margin-top: 18px;
-
-  text-indent: 101%;
+  text-indent: 0; 
+  font-size: 0;        /* 避免文字影響寬度 */
+  color: transparent;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -619,7 +651,7 @@ text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-right:404px;
+  margin-right:100px;
   margin-top:30px;
 }
 .top{
